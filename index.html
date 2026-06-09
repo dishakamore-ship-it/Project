@@ -1,11 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disha Kamore | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Welcome!!!</p>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="brand" href="#home">Disha<span>Kamore</span></a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">Dark</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">Future AI Engineer</p>
+        <h1>Disha Kamore</h1>
+        <h2>Aspiring AI Engineer | Diploma 3rd Year Student</h2>
+        <p>
+          I am passionate about coding, problem solving, and learning how artificial intelligence
+          can create useful solutions for real-world challenges.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <figure class="profile-card">
+        <div class="profile-photo-wrap">
+          <img src="assets/disha-profile.jpg" alt="Portrait of Disha Kamore" class="profile-photo">
+        </div>
+        <figcaption>
+          <strong>Disha Kamore</strong>
+          <span>Diploma Student | AI Learner</span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">About Me</p>
+        <h2>Learning today for an AI-driven future.</h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <h3>Education</h3>
+          <p>
+            I am a 3rd-year diploma student building a strong foundation in programming,
+            web development, and computer science concepts.
+          </p>
+        </div>
+        <div>
+          <h3>Career Goal</h3>
+          <p>
+            My goal is to become an AI Engineer and work on intelligent applications using
+            Python, machine learning, data, and modern software tools.
+          </p>
+        </div>
+        <div>
+          <h3>Interests</h3>
+          <p>
+            I enjoy learning programming languages, creating web projects, exploring AI,
+            and improving my skills through practical projects.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+        <h2>Programming skills I am building.</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <div class="skill-top"><span>C</span><strong>75%</strong></div>
+          <div class="progress"><span style="width: 75%"></span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-top"><span>C++</span><strong>70%</strong></div>
+          <div class="progress"><span style="width: 70%"></span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-top"><span>Java</span><strong>65%</strong></div>
+          <div class="progress"><span style="width: 65%"></span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-top"><span>Python</span><strong>80%</strong></div>
+          <div class="progress"><span style="width: 80%"></span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-top"><span>HTML</span><strong>85%</strong></div>
+          <div class="progress"><span style="width: 85%"></span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Practice projects for my portfolio.</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-image">Calculator</div>
+          <h3>Simple Calculator</h3>
+          <p>A basic calculator app for arithmetic operations using clean logic and a simple interface.</p>
+        </article>
+        <article class="project-card">
+          <div class="project-image">Records</div>
+          <h3>Student Management System</h3>
+          <p>A console or web-based system to manage student details, marks, and academic records.</p>
+        </article>
+        <article class="project-card">
+          <div class="project-image">Portfolio</div>
+          <h3>Portfolio Website</h3>
+          <p>A responsive personal website to showcase skills, projects, goals, and contact details.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Let us connect.</h2>
+      </div>
+      <form class="contact-form" id="contactForm" novalidate>
+        <label>
+          Name
+          <input type="text" id="name" name="name" placeholder="Enter your name">
+          <small class="error"></small>
+        </label>
+        <label>
+          Email
+          <input type="email" id="email" name="email" placeholder="Enter your email">
+          <small class="error"></small>
+        </label>
+        <label>
+          Message
+          <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
+          <small class="error"></small>
+        </label>
+        <button class="btn primary" type="submit">Send Message</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Disha Kamore. Built for a future in AI engineering.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
